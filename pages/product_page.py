@@ -1,5 +1,6 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
+from .locators import BasePageLocators
 
 
 class ProductPage(BasePage):
@@ -26,4 +27,4 @@ class ProductPage(BasePage):
     
     def should_dissapear_of_success_message(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
-            "Success message is disappered"
+            "Success message is appers"
